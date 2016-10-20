@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title> Form </title>
+	</head>
+
+	<body>
+
+		<!-- formulaire -->
+		<form>
+
+			<!-- fieldset infomations -->
+			<fieldset>
+				<legend> Informations </legend>
+
+				<!-- text and email -->
+				<label for="firstname"> First name </label>
+				<input type="text" name="firstname" id="firstname" required>
+				<br />
+				<label for="lastname"> Last name </label>
+				<input type="text" name="lastname" id="lastname" required>
+				<br />
+				<label for="email"> Email </label>
+				<input type="email" name="email" id="email" required>
+				<br />
+
+				<!-- radio buttons -->
+				Sex:
+				<input type="radio" name="sex" id="male" value="male">
+				<label for="male"> Male </label>
+				<input type="radio" name="sex" id="female" value="female">
+				<label for="female"> Female </label>
+				<br />
+
+				<!-- selector -->
+				Job:
+				<select name="Job">
+					<option value="student"> Student </option>
+					<option value="other"> other </option>
+				</select>
+			</fieldset>
+			<br />
+
+			<!-- textarea -->
+			Commentaires:
+			<br />
+			<textarea col="25" row="20" placeholder="text"></textarea>
+			<br />
+
+			<!-- checkbox -->
+			<input type="checkbox" name="subscribe" value="1" id="subscribe">
+			<label for="subscribe"> Subscribe me to the newsletter </label>
+			<br />
+
+			<!-- buttons -->
+			<input type="submit" value="Send" />
+			<input type="reset" value="Reset" />
+
+		</form>
+
+	</body>
+
+</html>
